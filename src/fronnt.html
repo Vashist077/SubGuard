@@ -1,7 +1,80 @@
-<hr>
-"hello"
-</hr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>M Square Hospital</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('dacc95ba-1f14-4af8-9607-db861d9f5d87.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+    }
 
+    header {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      font-size: 2em;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .menu {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    button {
+      padding: 15px;
+      font-size: 1em;
+      border: none;
+      border-radius: 8px;
+      background-color: #0077b6;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #0096c7;
+      transform: scale(1.05);
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 10px;
+      font-size: 0.9em;
+      color: #ddd;
+    }
+  </style>
+</head>
 <body>
-    <h1> Ganesh </h1>
+  <header>
+    M SQUARE HOSPITAL
+  </header>
+
+  <div class="menu">
+    <button onclick="alert('Admit Patient (Normal) selected')">1. Admit Patient (Normal)</button>
+    <button onclick="alert('Admit Patient (Emergency) selected')">2. Admit Patient (Emergency)</button>
+    <button onclick="alert('Provide Service (Normal Queue) selected')">3. Provide Service (Normal Queue)</button>
+    <button onclick="alert('Provide Service (Emergency) selected')">4. Provide Service (Emergency)</button>
+    <button onclick="alert('Discharge Patient selected')">5. Discharge Patient</button>
+    <button onclick="alert('Show Patients selected')">6. Show Patients</button>
+    <button onclick="alert('Show Discharged Patients selected')">7. Show Discharged Patients</button>
+    <button onclick="alert('Add Doctor selected')">8. Add Doctor</button>
+    <button onclick="alert('Show Doctors selected')">9. Show Doctors</button>
+    <button onclick="alert('Exit selected')">0. Exit</button>
+  </div>
+
+  <footer>
+    © 2025 M Square Hospital | Frontend Demo
+  </footer>
 </body>
+</html>
